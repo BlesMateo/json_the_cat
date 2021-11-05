@@ -20,11 +20,11 @@ describe('fetchBreedDescription', () => {
     fetchBreedDescription('Non existent breed', (err, desc) => {
       assert.equal(err, 'Sorry we could not find that breed in our database');
 
-      const expectedDesc = null
+      const expectedDesc = null;
 
       assert.equal(expectedDesc, desc);
 
       done();
-    })
-  })
+    });
+  });
 });
